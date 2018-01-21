@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <header>
+    <meta charset="UTF-8">
     <title>Random Quote Generator</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="framework/animate.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </header>
-<body> 
-    <div class="container">
-        <div class="row">
-        <div class="text-center col-md-8 col-md-offset-2">
-            <div class="quote-container"> 
-                <h1 class="quote">Find a inspiring quote</h1>   
-                <h4 class="author"></h4>
-            </div>
-        </div>
-            </div>
-        
-        <div class="text-center">
-            <button class="quote-btn" col-md-2>
-                New Quote
-            </button>
-        </div>
-        <hr>
-        <div class="text-center">
-            <button type="button" id="btn" class="btn" data-toggle="collapse" data-target="#collapse-inputs">Add your own quote
-            </button>
-            
-            <div id="collapse-inputs" class="collapse div-collapse">
-                <div class="text-center input-container">
-                    <input type="text" placeholder="Quote" id="input-quote" class="input-quote  text-center">
-                    <input type="text" placeholder="Author" class="input-author text-center">
-                    <div class="text-center">
-                    <button class="btn-add-quote" onclick="initStorage()">Add</button>
-                    </div>
-                 </div> 
-            </div>
-        </div>
+
+<body>
+    <div class="quote-container">
+        <h1 class="quote">Find Something Inspiring</h1>
+        <h4 class="author"></h4>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+
+    <div class="text-center">
+        <button class="quote-btn">New Quote</button>
+        <button class="add-quote-btn">Add Your Own</button>
+    </div>
+
+    <div class="modal">
+        <button class="x-button">x</button>
+        <textarea class="user-quote" placeholder="Quote"></textarea>
+        <input class="user-author" type="text" placeholder="Author">
+        <button class="add-user-quote">Add quote</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
